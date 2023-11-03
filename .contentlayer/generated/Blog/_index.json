@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Blog One - The Beginning",
+    "author": "John Doe",
+    "publishedAt": "2023-11-01T00:00:00.000Z",
+    "updatedAt": "2023-11-01T00:00:00.000Z",
+    "description": "The first blog post on my new website.",
+    "image": "https://source.unsplash.com/1600x900/?nature,water",
+    "isPublished": true,
+    "tags": [
+      "blog",
+      "website",
+      "first\r"
+    ],
+    "body": {
+      "raw": "\r\n# Blog One - The Beginning\r\n\r\nThis is the first blog post on my new website. I hope you enjoy it! I'm going to be writing about all sorts of things, so stay tuned for more content.\r\n",
+      "html": "<h1>Blog One - The Beginning</h1>\n<p>This is the first blog post on my new website. I hope you enjoy it! I'm going to be writing about all sorts of things, so stay tuned for more content.</p>"
+    },
+    "_id": "blog-one/index.mdx",
+    "_raw": {
+      "sourceFilePath": "blog-one/index.mdx",
+      "sourceFileName": "index.mdx",
+      "sourceFileDir": "blog-one",
+      "contentType": "mdx",
+      "flattenedPath": "blog-one"
+    },
+    "type": "Blog",
+    "url_path": "/blog/blog-one"
+  }
+]

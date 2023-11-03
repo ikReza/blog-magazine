@@ -46,30 +46,33 @@ const Navbar = () => {
         pathname === "" ? "bg-green-100" : "bg-[whitesmoke]"
       }`}
     >
-      <p className="flex items-start text-lg lg:text-xl font-bold tracking-wide">
+      <Link href="/" className="flex items-start text-lg lg:text-xl font-bold tracking-wide">
         blog<span className="uppercase text-[tomato]">Magazine</span>
-      </p>
-      <nav className="max-lg:hidden text-base font-medium flex items-center justify-center gap-5">
+      </Link>
+      <nav className="max-lg:hidden text-base font-medium flex items-center justify-center gap-5 border border-black rounded-full py-1 px-4 fixed right-1/2 translate-x-1/2">
         {navLinks.map((link, i) => (
           <Link
             key={i}
             href={`/${link === "home" ? "" : link}`}
             className={`p-2 capitalize ${
               pathname == (link === "home" ? "" : link)
-                ? "underline decoration-green-600 underline-offset-4"
+                ? "hidden"
                 : ""
             }`}
           >
             {link}
           </Link>
         ))}
+      </nav>
+      <div className="max-lg:hidden flex gap-5">
         <button className="p-2 px-6 border border-green-600 hover:border-green-700 rounded-[0.625rem]">
           Login
         </button>
         <button className="p-2 px-4 bg-green-600 hover:bg-green-700 rounded-[0.625rem] text-white">
           Register
         </button>
-      </nav>
+      </div>
+
       <Hamburger isOpen={isOpen} handleMenu={handleMenu} />
 
       {/* For small screen */}
