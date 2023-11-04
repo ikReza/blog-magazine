@@ -3,25 +3,26 @@ const EmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MobileRegex = /^(\+88)?01[3-9][0-9]{8}$/;
 
 class FormHelper {
-  isEmpty(val) {
+  IsEmpty(val) {
     return val.length === 0;
   }
 
-  isMobile(val) {
+  IsMobile(val) {
     return MobileRegex.test(val);
   }
 
-  isEmail(val) {
+  IsEmail(val) {
     return EmailRegex.test(val);
   }
 
-  errorToast(msg) {
+  ErrorToast(msg) {
     toast.error(msg);
   }
 
-  successToast(msg) {
+  SuccessToast(msg) {
     toast.success(msg);
   }
 }
 
-export const { isEmpty, isMobile, isEmail, errorToast, successToast } = new FormHelper();
+export const { IsEmpty, IsMobile, IsEmail, ErrorToast, SuccessToast } =
+  new FormHelper();

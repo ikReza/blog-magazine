@@ -1,3 +1,8 @@
+import Feature from "@/components/Feature";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import HowItWork from "@/components/HowItWork";
+import Navbar from "@/components/Navbar";
 import Subscribe from "@/components/Subscribe";
 import { allBlogs } from "contentlayer/generated";
 
@@ -5,12 +10,14 @@ export default function Home() {
   // console.log(allBlogs);
   return (
     <main>
-      <section>Blog Item</section>
-      <section>Unique Section-2</section>
-      <section>Unique Section-3</section>
+      <Navbar />
+      <Hero />
+      <Feature />
+      <HowItWork />
       <section>
         <Subscribe />
       </section>
+      <Footer />
     </main>
   );
 }

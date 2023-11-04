@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "axios": "^1.6.0",
     "framer-motion": "^10.16.4",
     "jose": "^5.0.2",
     "next": "13.5.4",
     "next-contentlayer": "^0.3.4",
     "nextjs-toploader": "^1.6.4",
+    "nodemailer": "^6.9.7",
+    "nodemailer-smtp-transport": "^2.7.4",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",

@@ -1,8 +1,6 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const poppin = Poppins({
   subsets: ["latin"],
@@ -17,11 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppin.className} flex flex-col min-h-screen `}>
+      <body className={`${poppin.className} flex flex-col min-h-screen`}>
         <NextTopLoader color="#16A34A" />
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

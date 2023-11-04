@@ -46,7 +46,10 @@ const Navbar = () => {
         pathname === "" ? "bg-green-100" : "bg-[whitesmoke]"
       }`}
     >
-      <Link href="/" className="flex items-start text-lg lg:text-xl font-bold tracking-wide">
+      <Link
+        href="/"
+        className="flex items-start text-lg lg:text-xl font-bold tracking-wide"
+      >
         blog<span className="uppercase text-[tomato]">Magazine</span>
       </Link>
       <nav className="max-lg:hidden text-base font-medium flex items-center justify-center gap-5 border border-black rounded-full py-1 px-4 fixed right-1/2 translate-x-1/2">
@@ -55,9 +58,7 @@ const Navbar = () => {
             key={i}
             href={`/${link === "home" ? "" : link}`}
             className={`p-2 capitalize ${
-              pathname == (link === "home" ? "" : link)
-                ? "hidden"
-                : ""
+              pathname == (link === "home" ? "" : link) ? "hidden" : ""
             }`}
           >
             {link}
@@ -65,12 +66,12 @@ const Navbar = () => {
         ))}
       </nav>
       <div className="max-lg:hidden flex gap-5">
-        <button className="p-2 px-6 border border-green-600 hover:border-green-700 rounded-[0.625rem]">
+        <Link
+          href="/user/login"
+          className="p-2 px-6 border bg-green-600 hover:bg-green-700 text-white rounded-[0.625rem]"
+        >
           Login
-        </button>
-        <button className="p-2 px-4 bg-green-600 hover:bg-green-700 rounded-[0.625rem] text-white">
-          Register
-        </button>
+        </Link>
       </div>
 
       <Hamburger isOpen={isOpen} handleMenu={handleMenu} />
@@ -98,12 +99,12 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="flex gap-x-8 mt-4">
-              <button className="p-2 px-6 border border-green-600 hover:border-green-700 rounded-[0.625rem]">
+              <Link
+                href="/user/login"
+                className="p-2 px-6 border border-green-600 hover:border-green-700 rounded-[0.625rem]"
+              >
                 Login
-              </button>
-              <button className="p-2 px-4 bg-green-600 hover:bg-green-700 rounded-[0.625rem] text-white">
-                Register
-              </button>
+              </Link>
             </div>
           </nav>
         </motion.div>

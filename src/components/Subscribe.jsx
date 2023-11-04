@@ -4,7 +4,7 @@ const Subscribe = () => {
       <div className="flex flex-col items-center md:w-2/3 lg:w-5/12 mx-auto text-center">
         
         <p className="text-xl md:text-2xl lg:text-3xl font-bold capitalize my-4 text-white">
-          Interseting Stories | Updates | Guides
+          Interesting Stories | Updates | Guides
         </p>
         <p className="text-gray-400 capitalize">
           Subscribe to our newsletter to get the latest updates straight to your inbox.
